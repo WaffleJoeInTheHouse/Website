@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Elements</title>
+</head>
+<body>
+	<center>
+		<h1>html form elements</h1>
+	</center>		
+		<center>
+			<table border="1" width="70%">
+				<thead>
+					<tr>
+						<th>Form Element</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<!-- CATEGORY 1: TEXT INPUTS -->
+					<fieldset>
+					<th colspan="2"><legend>Text Forms</legend></th>
+					<tr>
+						<td><label for="basic-text"><b>Text Input:</b></label></td>
+						<td><input type="text" id="basic-text" name="basic-text"maxlength="50" placeholder="Input Text"></td>
+					</tr>
+					<tr>
+						<td><label for="password"><b>Password Input:</b></label></td>
+						<td><input type="password" id="password" name="password" required placeholder="Input Password"></td>
+					</tr>
+					<tr>
+						<td><label for="email"><b>Email Input:</b></label></td>
+						<td><input type="email" id="email" name="email" required placeholder="example@email.com"></td>
+					</tr>
+					<tr>
+						<td><label for="user-url"><b>URL Input:</b></label></td>
+						<td><input type="url" id="user-url" name="user-url" placeholder="https://example.com"></td>
+					</tr>
+					<tr>
+						<td><label for="user-number"><b>Number Input:</b></label></td>
+						<td><input type="tel" id="user-tel" name="user_tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td>
+					</tr>
+					<tr>
+						<td><label for="site-search"><b>Search Input:</b></label></td>
+						<td><input type="search" id="site-search" name="site_search" placeholder="Search site..."></td>
+					</tr>
+					<tr>
+						<td><label for="user-bio"><b>Textarea (Multi-line Text):</b></label></td>
+						<td><textarea id="user-bio" name="user_bio" rows="4" cols="50" placeholder="Type your biography here..."></textarea></td>
+					</tr>
+					</fieldset>
+
+					<!-- CATEGORY 2: NUMERICAL & RANGE -->
+					<fieldset>
+						<th colspan="2"><legend>Numerical & amp; Range</legend></th>
+						<tr>
+							<td><label for="user-age"><b>Input:</b></label></td>
+							<td><input type="number" id="user-age" name="user_age" min="-1" max="360" step="1" value="25"></td>
+						</tr>
+						<tr>
+							<td><label for="volume-level"><b>Range Input (Slider):</b></label></td>
+							<td><input type="range" id="volume-level" name="volume_level" min="0" max="100" step="5" value="50"></td>
+						</tr>
+					</fieldset>
+
+					<fieldset>
+						<th colspan="2"><legend>Date & amp; Time Controls</legend></th>
+						<tr>
+							<td><label for="event-date"><b>Date Input:</b></label></td>
+							<td><input type="date" id="event-date" name="event_date" min="2020-01-01" max="2030-12-31"></td>
+						</tr>
+						<tr>
+							<td><label for="event-time"><b>Time Input:</b></label></td>
+							<td><input type="time" id="event-time" name="event_time"></td>
+						</tr>
+						<tr>
+							<td><label for="event-datetime"><b>Date & amp; Time Local Input:</b></label></td>
+							<td><input type="datetime-local" id="event-datetime" name="event_datetime"></td>
+						</tr>
+						<tr>
+							<td><label for="card-expiry-month"><b>Month Input:</b></label></td>
+							<td><input type="month" id="card-expiry-month" name="card_expiry_month"></td>
+						</tr>
+						<tr>
+							<td><label for="project-week"><b>Week Input:</b></label></td>
+							<td><input type="week" id="project-week" name="project_week"></td>
+						</tr>
+					</fieldset>
+
+					<!-- CATEGORY 4: SELECTION CONTROLS -->
+					<fieldset>
+						<th colspan="2"><legend>Selection Controls</legend></th>
+						<tr>
+							<td><label for="terms-agree"><b>I agree to the terms and conditions (Single Checkbox)</b></label></td>
+							<td><input type="checkbox" id="terms-agree" name="terms_agree" value="accepted"></td>
+						</tr>
+						<tr>
+							<th colspan="2" style="text-align: center;"><span><b>Hobbies (Multiple Checkboxes):</b></span><br></th>
+						</tr>
+						<tr>
+							<td><label for="hobby-reading"><b>Reading</b></label></td>
+							<td><input type="checkbox" id="hobby-reading" name="hobbies" value="reading"></td>
+						</tr>
+						<tr>
+							<td><label for="hobby-sports"><b>Sports></b></label></td>
+							<td><input type="checkbox" id="hobby-sports" name="hobbies" value="sports"></td>
+						</tr>
+						<tr>
+							<td><label for="hobby-coding"><b>Coding</b></label></td>
+							<td><input type="checkbox" id="hobby-coding" name="hobbies" value="coding" unchecked></td>
+						</tr>
+						<tr>
+							<th colspan="2" style="text-align: center;"><span><b>Contact Preference (Radio Buttons):</b></span><br></th>
+						</tr>
+						<tr>
+							<td><label for="pref-email"><b>Email</b></label></td>
+							<td><input type="radio" id="pref-email" name="contact_pref" value="email" checked></td>
+						</tr>
+						<tr>
+							<td><label for="pref-phone"><b>Phone</b></label></td>
+							<td><input type="radio" id="pref-phone" name="contact_pref" value="phone"></td>
+						</tr>
+						<tr>
+							<td><label for="pref-mail"><b>Mail</b></label></td>
+							<td><input type="radio" id="pref-mail" name="contact_pref" value="mail"></td>
+						</tr>
+						<tr>
+							<td><label for="country-select"><b>Select Dropdown:</b></label></td>
+							<td><select id="country-select" name="country_select">
+								<option value="" disabled selected>-- Select a Country --</option>
+								<optgroup label="North America">
+								<option value="us">United States</option>
+								<option value="ca">Canada</option>
+								</optgroup>
+								<optgroup label="Europe">
+								<option value="uk">United Kingdom</option>
+								<option value="fr">France</option>
+								</optgroup>
+								</select></td>
+						</tr>
+						<tr>
+							<td><label for="skills-select"><b>Multiple Select Box:</b></label><br></td>
+							<td><select id="skills-select" name="skills_select" multiple size="4">
+								<option value="html">HTML5</option>
+								<option value="css">CSS3</option>
+								<option value="js">JavaScript</option>
+								<option value="sql">SQL</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td><label for="browser-choice"><b>Datalist Input (Autocompletion):</b></label></td>
+							<td><input list="browsers" id="browser-choice" name="browser_choice" placeholder="Type or choose a browser">
+							<datalist id="browsers">
+								<option value="Chrome">
+								<option value="Firefox">
+								<option value="Safari">
+								<option value="Edge">
+							</datalist></td>
+						</tr>
+					</fieldset>
+
+					<!-- CATEGORY 5: FILE & MEDIA -->
+					<fieldset>
+						<th colspan="2"><legend><b>File & Media Inputs</b></legend></th>
+					<tr>
+						<td><label for="user-avatar"><b>File Input (Single/Multiple):</b></label></td>
+						<td><input type="file" id="user-avatar" name="user_avatar" accept="image/*,.pdf" multiple></td>
+					</tr>
+					<tr>
+						<td><label for="fav-color"><b>Color Picker Input:</b></label></td>
+						<td><input type="color" id="fav-color" name="fav_color" value="#ff0000"></td>
+					</tr>
+					</fieldset>
+
+					<!-- CATEGORY 6: SPECIAL, DISPLAY & HIDDEN -->
+					 <fieldset>
+						<th colspan="2" style="text-align: center;"><legend><b>Special, Display & amp; Hidden Elements</b></legend></th>
+						<input type="hidden" id="user-id" name="user_id" value="102938">
+						<tr>
+							<td colspan="2"><input type="hidden" id="user-id" name="user_id" value="102938"><label for="num-a">A:</label><input type="number" id="num-a" value="10"> +<label for="num-b">B:</label><input type="number" id="num-b" value="20"> =<output name="result" for="num-a num-b">30</output></td>
+						</tr>
+						<tr>
+							<td><label for="disk-usage"><b>Meter Element (Disk Usage):</b></label></td>
+							<td><meter id="disk-usage" min="0" max="100" low="33" high="66" optimum="80" value="50">50%</meter></td>
+						</tr>
+						<tr>
+							<td><label for="file-progress"><b>Progress Element:</b></label></td>
+							<td><progress id="file-progress" max="100" value="69">69%</progress></td>
+						</tr>
+					 </fieldset>
+
+					 <!-- CATEGORY 7: BUTTON CONTROLS -->
+					  <fieldset>
+						<th colspan="2" style="text-align: center;"><legend><b>Buttons & amp; Actions</b></legend></th>
+						<tr>
+							<td colspan="2" style="text-align: center;"><input type="submit" value="Submit Input Button"></td>
+						</tr>
+						<tr>
+							<td><input type="reset" value="Reset Input Button"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="Plain Input Button" onclick="alert('Button clicked!')"></td>
+						</tr>
+						<tr>
+							<td><label for="img-submit"><b>Image Submit Button:</b></label><br></td>
+							<td><input type="image" id="img-submit" src="https://placehold.co/100x35/000000/FFFFFF?text=Submit" alt="Submit Image Button"></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align: center;"><button type="submit"><strong>Submit</strong> Button Tag</button><button type="reset"><em>Reset</em> Button Tag</button><button type="button">Custom <span>Button Tag</span></button></td>
+						</tr>
+					  </fieldset>
+				</tbody>
+			</table>
+		</center>
+		</table>
+	</form>
+</body>
+</html>
