@@ -1,0 +1,56 @@
+.navbar {
+ background-color: #5e92db; /* Primary Navy */
+ width: 100%;
+ box-shadow: 0 4px 6px rgba(184, 173, 173, 0.1);
+}
+
+.nav-list {
+ display: flex;                 /* Align ng mga List pahiga */
+ flex-direction: row;           /* Yung flex element sa display ay ginawang row */
+ justify-content: flex-start;   /* Pinapack yung list sa start ng menu */
+ align-items: center;           /* I-align yung list sa center patayo */
+ list-style-type: none;         /* Inaalis ang list bullet points */
+ margin: 12px;                  /* Iniclaro ang default ng browser margins */
+ padding: 6px;                 /* Lagay ng padding sa listahan */
+}
+
+.nav-link {
+ display: block; /* Ginawang block ang display ng mga Navigation list */
+ padding: 14px 26px; /* Gaano kalaki ang ispasyo ng Nav List */
+ color: #1d1818; /* Kulay ng Navigation link */
+ text-decoration: none; /* Inaalis ang Linya sa ilalim ng Text */
+ font-family: 'Segoe UI', sans-serif; /* Font ng Navigation link */
+ font-size: 15px; /* Laki ng Font ng Navigation link */
+ font-weight: 600; /* Lakas ng Font ng Navigation link */
+ transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.nav-link:link {
+ color: #FFFFFF; /* color ng navigalion link */
+}
+
+.nav-link:visited {
+ color: #E0E0E0;
+}
+
+.nav-link:hover {
+ background-color: #005A9C;
+ color: #FFFFFF;
+}
+
+.nav-link:focus {
+ outline: 3px solid #FFC107;
+ outline-offset: -3px;
+ background-color: #004080;
+}
+
+.nav-link:active {
+ background-color: #002B55;
+ transform: translateY(1px);
+}
+
+.nav-link.active {
+ background-color: #005A9C;
+ border-bottom: 4px solid #FFC107;
+}
+
