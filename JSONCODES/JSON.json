@@ -1,0 +1,72 @@
+[
+  {
+    "lrn": "107985140204",
+    "name": "CRUZ, VAUGHN LESTAT, G.",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "VAUGHN.jpg"
+  },
+  {
+    "lrn": "107883140206",
+    "name": "CONCEPCION, NYT ZEFHIRO CERILLO",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "NYT.jpg"
+  },
+  {
+    "lrn": "107974140650",
+    "name": "BERGADO, JULIUS CEAZAR, SALIMBAGAT",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "JULIUS.jpg"
+  },
+  {
+    "lrn": "108026140036",
+    "name": "DELA CRUZ, ZIANTINO LAO",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "ZIANTINO.jpg"
+  },
+  {
+    "lrn": "107985140238",
+    "name": "MALIKSI, LANCE KHERWIN CAMAT",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "LANCE.jpg"
+  },
+  {
+    "lrn": "156713249856",
+    "name": "ROSALES, JETHRO, AMADAR",
+    "age": 18,
+    "section": "12-Cooper",
+    "image": "JETHRO.jpg"
+  },
+  {
+    "lrn": "4531689751394",
+    "name": "PAGLINAWAN, PRINCE LUSCIAN, LAXAMANA",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "PRINCE.jpg"
+  },
+  {
+    "lrn": "78456212345879",
+    "name": "SALUGAO, RAILEY VALE, A.",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "RAILEY.png"
+  },
+  {
+    "lrn": "784446985547",
+    "name": "BAUTO, KIANE CARLO S.",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "BAUTO.png"
+  },
+  {
+    "lrn": "788994635711",
+    "name": "TANGONAN, TENJIN CAMAMA.",
+    "age": 17,
+    "section": "12-Cooper",
+    "image": "TENJIN.jpg"
+  }
+]
