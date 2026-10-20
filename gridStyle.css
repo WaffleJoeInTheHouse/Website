@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box{
+    background-color: #101213;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.container{
+    display: grid;
+    min-height: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+}
