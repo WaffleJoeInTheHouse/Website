@@ -54,3 +54,62 @@
  border-bottom: 4px solid #FFC107;
 }
 
+/*body{
+    background-color: rgb(121, 143, 41);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;
+}*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.Classwork{
+    background-color: #2ace40;
+    color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+
+}
+
+.Portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.Portfolio-table td{
+    background-color: #57e044;
+    border: 1px solid #229e32;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.Portfolio-table a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.Portfolio-table a:hover{ 
+    color: #FFC107;
+    text-decoration: underline;
+}
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
