@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Jquery</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+     } );
+    </script>
+<style>
+
+    #tabs.ui-tabs .ui-tabs-nav .ui-tabs-tab {
+        background: #46ec46;
+        border: 1px solid #ccc;
+    }
+
+    #tabs.ui-tabs .ui-tabs-nav li {
+      list-style: none;
+      float: left;
+      position: relative;
+      top: 0;
+      margin: 1px .2em 0 0;
+      border-bottom-width: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+
+    #tabs.ui-tabs .ui-tabs-nav .ui-tabs-tab.ui-state-active {
+        background: #0b7a0b;
+        border: 1px solid #59be45;
+    }
+
+    #tabs.ui-tabs .ui-tabs-nav .ui-state-hover {
+        background: #8dfa11;
+    }
+
+    #tabs.ui-tabs .ui-tabs-panel {
+        background-color: #fffd6f;
+        color: #212529;
+        border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+    <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">First Tab</a></li>
+    <li><a href="#tabs-2">Second Tab</a></li>
+    <li><a href="#tabs-3">Third Tab</a></li>
+    <li><a href="#tabs-4">Fourth Tab</a></li>
+  </ul>
+
+  <div id="tabs-1">
+    <p>First tab.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Second tab.</p>
+  </div>
+  <div id="tabs-3">
+    <p>Third tab.</p>
+  </div>
+  <div id="tabs-4">
+    <p>Fourth tab.</p>
+  </div>
+</div>
+<a href="portfolio.html">Portfolio</a>
+</body>
+</html>
