@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva Shapes</title>
+      <style>
+        #myDrawing{
+            border:solid 1px green;
+        }
+
+        body {
+        margin: 0;
+        height: 100vh;
+        display: grid;
+        place-items: center; /* Centers on both X and Y axes */
+        }
+    </style>
+
+</head>
+<body>
+      <canvas height ="500" width="1000" id="myDrawing"></canvas>
+        <script>
+        const canvas = document.getElementById("myDrawing");
+        const ctx = canvas.getContext("2d");
+
+        // Card 
+        ctx.beginPath();
+        ctx.moveTo(100, 50); // Move the pen to (30, 50)
+        ctx.lineTo(100, 400); // Draw a line to (150, 100)
+        ctx.lineTo(300, 400);
+        ctx.lineTo(300, 50);
+        ctx.lineTo(100, 50);//x y,
+        ctx.fillStyle = '#B10021';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(100, 200);
+        ctx.lineTo(300, 200);
+        ctx.lineTo(300, 250);
+        ctx.lineTo(100, 250);
+        ctx.lineTo(100, 200);
+        ctx.fillStyle = '#3A3638';
+        ctx.fill();
+        ctx.stroke();
+
+        // Tree Trunk
+        ctx.beginPath();
+        ctx.moveTo(780, 340);
+        ctx.lineTo(780, 400);
+        ctx.lineTo(820, 400);
+        ctx.lineTo(820, 340);
+        ctx.lineTo(780, 340);
+        ctx.fillStyle = '#6E3B1E';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = '#1E7B34';
+
+        // Bottom Triangle
+        ctx.beginPath();
+        ctx.moveTo(800, 190);
+        ctx.lineTo(700, 340);
+        ctx.lineTo(900, 340);
+        ctx.lineTo(800, 190);
+        ctx.fill();
+        ctx.stroke();
+
+        // Middle Triangle
+        ctx.beginPath();
+        ctx.moveTo(800, 115);
+        ctx.lineTo(720, 250);
+        ctx.lineTo(880, 250);
+        ctx.lineTo(800, 115);
+        ctx.fill();
+        ctx.stroke();
+
+        // Top Triangle
+        ctx.beginPath();
+        ctx.moveTo(800, 50);
+        ctx.lineTo(740, 165);
+        ctx.lineTo(860, 165);
+        ctx.lineTo(800, 50);
+        ctx.fill();
+        ctx.stroke();
+
+        // Garments
+        ctx.strokeStyle = '#FFD700';
+        ctx.lineWidth = 3;
+
+        ctx.beginPath();
+        ctx.moveTo(762, 130);
+        ctx.quadraticCurveTo(800, 152, 838, 130);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(742, 218);
+        ctx.quadraticCurveTo(800, 245, 858, 218);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(720, 305);
+        ctx.quadraticCurveTo(800, 335, 880, 305);
+        ctx.stroke();
+
+        ctx.strokeStyle = '#000000';
+        ctx.lineWidth = 1;
+
+        ctx.font = 'bold 36px Arial';
+        ctx.fillStyle = '#1E7B34';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('Merry Christmas', 500, 235);
+        </script>
+</body>
+</html>

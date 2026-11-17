@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-align: center;">SVG SHAPES</title>
+</head>
+<body>
+            <div style="flex-direction: grid; height:100vh;">
+
+            <h1 style="color: rgb(55, 138, 138);">SVG SHAPE</h1>
+            <p style="font-size: 20px">SVG Circle</p>
+
+            <svg width="250" height="250" style="border: 2px solid black;">
+                <circle cx="125" cy="125" r="100" fill="lightblue" stroke="black" stroke-width="2" />
+            </svg>
+
+            <p style="font-size: 20px">SVG Square</p>
+            <svg width="250" height="250" viewBox="0 0 100 100" style="border: 2px solid black;">
+                <rect x="25" y="25" width="50" height="50" fill="royalblue" />
+            </svg>
+
+            <p style="font-size: 20px">SVG Star</p>
+            <svg width="205" height="220" style="border: 2px solid black;">
+                <polygon points="100,10 40,198 190,78 10,78 160,198"
+                style="fill:indigo;stroke:yellow;stroke-width:5;fill-rule:evenodd;"
+                />
+            </svg>
+
+            <p style="font-size: 20px">SVG Rectangle</p>
+            <svg width="250" height="250" style="border: 2px solid black;">
+                <rect x="25" y="75" width="200" height="100" stroke="yellow" stroke-width="6" fill="blue" />
+            </svg>
+
+            <p style="font-size: 20px">SVG Ellipse</p>
+            <svg height="170" width="250" style="border: 2px solid black;"> 
+                <defs>
+                    <linearGradient id="grad1">
+                    <stop offset="0%" stop-color="yellow" />
+                    <stop offset="100%" stop-color="red" />
+                    </linearGradient>
+                </defs>
+                <ellipse cx="110" cy="85" rx="85" ry="55" fill="url(#grad1)" />
+                <text fill="#ffffff" font-size="45" font-family="Verdana" x="75" y="96">HI</text>
+            </svg>
+      </div>
+</body>
+</html>
