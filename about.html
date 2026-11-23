@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="landingpageDesign.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$("#tabs").tabs();
+		});
+	</script>
 </head>
 <body>
-    <link rel="stylesheet" href="landingpageDesign.css">
+	<nav class="navbar" role="navigation" aria-label="Main Navigation">
+		<ul class="nav-list">
+			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+			<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
 
-		<nav class="navbar" role="navigation" aria-label="Main Navigation">
- 		<ul class="nav-list">
- 			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
- 			<li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
- 			<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
- 			<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
- 			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
- 		</ul>
-		</nav>
-        <h1>About</h1>
-			<footer class="footer">
-      		<div class="footer-content">
-        		<div class="footer-text">
-          			<h3>Stay Connected!</h3>
-          				<p>
-            				"Thank you for visiting my website. Connect with me on social media
-           					or reach out via email for collaborations and inquiries. Your
-            				support and feedback are greatly appreciated."  
-          				</p>
-        	</div>
-		  <div class="footer-social">
-          <h3>Socials</h3>
-          <div class="social-links">
-            <a href="https://www.instagram.com/didbyda1le/">Insta</a>
-            <a href="https://www.youtube.com/@paranoid3491">▶</a>
-            <a href="https://web.facebook.com/dale.peralta.792">f</a>
-          </div>
-        </div>
-      </div>
+	<main class="about-container">
+		<div class="profile-box">
+			<img src="Remielle.jfif" alt="Remielle Dan" class="profile-pic">
+			<h2>Placeholder picture</h2>
+			<p>ICT PROGRAMMING | Grade-12 Cooper</p>
+		</div>
 
-      <div class="footer-bottom">
-        <p>©2026 All rights Reserved | Created by : Peralta</p>
-      </div>
-    </footer>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">About me</a></li>
+				<li><a href="#tabs-2">Hobbies</a></li>
+				<li><a href="#tabs-3">Education</a></li>
+				<li><a href="#tabs-4">Future Goal</a></li>
+			</ul>
+
+			<div id="tabs-1">
+				<p>Hello! I am Dale Danielle A. Peralta, a Grade 12 of Governor, Juanito Reyes Remulla Senior High School(GJRRSHS), 
+				I'm an ICT Programming student.</p>
+			</div>
+			<div id="tabs-2">
+				<p>My hobbies are</p>
+				<ul>
+					<li>Reading</li>
+					<li>Gaming</li>
+					<li>Watching Movies</li>
+					<li>Listening to Music</li>
+				</ul>
+			</div>
+			<div id="tabs-3">
+				<p>Currently Learning HTML, CSS, JavaScript, and Java programming fundamentals. 
+				In GJRRSHS, I am pursuing the ICT Programming strand. Section: Grade-12 Cooper</p>
+			</div>
+			<div id="tabs-4">
+				<p>My Current future goal is to complete my senior high school education and pursue collage where ill be taking IT.</p>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer-text">
+				<h3>Stay Connected!</h3>
+				<p>
+					"Thank you for visiting my website. Connect with me on social media
+					or reach out via email for collaborations and inquiries. Your
+					support and feedback are greatly appreciated."
+				</p>
+			</div>
+			<div class="footer-social">
+				<h3>Socials</h3>
+				<div class="social-links">
+					<a href="https://www.instagram.com/didbyda1le/">Insta</a>
+					<a href="https://www.youtube.com/@paranoid3491">▶</a>
+					<a href="https://web.facebook.com/dale.peralta.792">f</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>©2026 All rights Reserved | Created by : Peralta</p>
+		</div>
+	</footer>
 </body>
 </html>
