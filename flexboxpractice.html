@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Try</title>
+    <style>
+        .container1 {
+            display: flex;
+            flex-direction: row;
+            min-height: auto;
+        }
+        
+        .childcontainer { display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: row-reverse;
+            min-height: auto;
+        }
+
+        .child2container { display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .container3 {
+            display: flex;
+            flex-direction: column;
+            min-height: auto;
+        }
+
+        .child3container { display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .container4{
+             display: flex;
+            flex-direction: column-reverse;
+            min-height: auto;
+        }
+
+        .child4container { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Justify1{
+            display: flex;
+            min-height: auto;
+            justify-content: flex-start;
+        }
+
+        .child1justify {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Justify2{
+            display: flex;
+            min-height: auto;
+            justify-content: center;
+        }
+
+        .child2justify {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Justify3{
+            display: flex;
+            min-height: auto;
+            justify-content: flex-end;
+        }
+
+        .child3justify {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Justify4{
+            display: flex;
+            min-height: auto;
+            justify-content: space-between;
+        }
+
+        .child4justify {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Justify5{
+            display: flex;
+            min-height: auto;
+            justify-content: space-around;
+        }
+
+        .child5justify {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Justify6{
+            display: flex;
+            min-height: auto;
+            justify-content: space-evenly;
+        }
+
+        .child6justify {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100px; 
+            height: 50px; 
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Align1{
+            display: flex; /* or display: grid; */
+            align-items: stretch;
+            width: 270px;
+            height: 140px;
+        }
+
+        .child1align {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex: 1 0;
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Align2{
+            display: flex;
+            align-items: flex-start;
+            width: 270px;
+            height: 140px;
+        }
+
+        .child2align {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 0;
+            height: 50px;
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Align3{
+            display: flex;
+            align-items: center;
+            width: 270px;
+            height: 140px;
+        }
+
+        .child3align {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 0;
+            height: 50px;
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+
+        .Align4{
+            display: flex;
+            align-items: flex-end;
+            width: 270px;
+            height: 140px;
+        }
+
+        .child4align {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 0;
+            height: 50px;
+            font-weight: bold;
+            background-color: rgb(0, 238, 255);
+        }
+    </style>
+</head>
+<body>
+    <a href="portfolio.html"><h2>Portfolio</h2></a>
+    <h1>Row</h1>
+    <div class="container1">
+        <div class="childcontainer">1</div>
+        <div class="childcontainer">2</div>
+        <div class="childcontainer">3</div>
+    </div>
+
+    <h1>Row-Reverse</h1>
+    <div class="container2">
+        <div class="child2container">1</div>
+        <div class="child2container">2</div>
+        <div class="child2container">3</div>
+    </div>
+
+    <h1>Column</h1>
+    <div class="container3">
+        <div class="child3container">1</div>
+        <div class="child3container">2</div>
+        <div class="child3container">3</div>
+    </div>
+
+    <h1>Column-Reverse</h1>
+    <div class="container4">
+        <div class="child4container">1</div>
+        <div class="child4container">2</div>
+        <div class="child4container">3</div>
+    </div>
+
+    <h1>Justify-Content: Flex Start</h1>
+    <div class="Justify1">
+        <div class="child1justify">1</div>
+        <div class="child1justify">2</div>
+        <div class="child1justify">3</div>
+    </div>
+
+    <h1>Justify-Content: Flex Center</h1>
+    <div class="Justify2">
+        <div class="child2justify">1</div>
+        <div class="child2justify">2</div>
+        <div class="child2justify">3</div>
+    </div>
+
+    <h1>Justify-Content: Flex End</h1>
+    <div class="Justify3">
+        <div class="child3justify">1</div>
+        <div class="child3justify">2</div>
+        <div class="child3justify">3</div>
+    </div>
+
+    <h1>Justify-Content: Space Between</h1>
+    <div class="Justify4">
+        <div class="child4justify">1</div>
+        <div class="child4justify">2</div>
+        <div class="child4justify">3</div>
+    </div>
+
+    <h1>Justify-Content: Space Around</h1>
+    <div class="Justify5">
+        <div class="child5justify">1</div>
+        <div class="child5justify">2</div>
+        <div class="child5justify">3</div>
+    </div>
+
+    <h1>Justify-Content: Space Evenly</h1>
+    <div class="Justify6">
+        <div class="child6justify">1</div>
+        <div class="child6justify">2</div>
+        <div class="child6justify">3</div>
+    </div>
+
+    <h1>Align-Items: Stretch</h1>
+    <div class="Align1">
+        <div class="child1align">1</div>
+        <div class="child1align">2</div>
+        <div class="child1align">3</div>
+    </div>
+
+    <h1>Align-Items: Flex Start</h1>
+    <div class="Align2">
+        <div class="child2align">1</div>
+        <div class="child2align">2</div>
+        <div class="child2align">3</div>
+    </div>
+
+    <h1>Align-Items: Center</h1>
+    <div class="Align3">
+        <div class="child3align">1</div>
+        <div class="child3align">2</div>
+        <div class="child3align">3</div>
+    </div>
+
+    <h1>Align-Items: Flex End</h1>
+    <div class="Align4">
+        <div class="child4align">1</div>
+        <div class="child4align">2</div>
+        <div class="child4align">3</div>
+    </div>
+</body>
+</html>
+
+
