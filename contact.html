@@ -1,47 +1,129 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Contact</title>
-	</head>
-	<body>
-		<link rel="stylesheet" href="landingpageDesign.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="landingpageDesign.css">
+	<style>
+		.contact-main {
+			max-width: 680px;
+			margin: 36px auto;
+			padding: 0 20px;
+		}
 
-			<nav class="navbar" role="navigation" aria-label="Main Navigation">
-			<ul class="nav-list">
-				<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-				<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-				<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-				<li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-			</ul>
-			</nav>
-			<h1>Contact</h1>
-				<footer class="footer">
-      		<div class="footer-content">
-        		<div class="footer-text">
-          			<h3>Stay Connected!</h3>
-          				<p>
-            				"Thank you for visiting my website. Connect with me on social media
-           					or reach out via email for collaborations and inquiries. Your
-            				support and feedback are greatly appreciated."  
-          				</p>
-        	</div>
-		  <div class="footer-social">
-          <h3>Socials</h3>
-          <div class="social-links">
-            <a href="https://www.instagram.com/didbyda1le/">Insta</a>
-            <a href="https://www.youtube.com/@paranoid3491">▶</a>
-            <a href="https://web.facebook.com/dale.peralta.792">f</a>
-          </div>
-        </div>
-      </div>
+		.contact-container {
+			background-color: #ffffff;
+			border: 1px solid #d7e8da;
+			border-top: 6px solid #3caf4b;
+			border-radius: 10px;
+			padding: 32px 24px;
+			text-align: center;
+			box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+		}
 
-      <div class="footer-bottom">
-        <p>©2026 All rights Reserved | Created by : Peralta</p>
-      </div>
-    </footer>
-		
-	</body>
-	</html>
+		.contact-container h1 {
+			color: #043e1a;
+			margin-bottom: 10px;
+		}
+
+		.contact-intro {
+			color: #444444;
+			margin-bottom: 22px;
+		}
+
+		.contact-info {
+			background-color: #e8f5e9;
+			border-radius: 8px;
+			padding: 18px;
+			margin-bottom: 22px;
+			line-height: 1.8;
+			color: #1b5e20;
+		}
+
+		.contact-info a {
+			color: #065524;
+			font-weight: 600;
+			text-decoration: none;
+		}
+
+		.contact-info a:hover {
+			text-decoration: underline;
+		}
+
+		.contact-socials {
+			display: flex;
+			justify-content: center;
+			gap: 14px;
+			flex-wrap: wrap;
+		}
+
+		.contact-socials a {
+			padding: 8px 16px;
+			background-color: #3caf4b;
+			color: #ffffff;
+			text-decoration: none;
+			border-radius: 6px;
+			font-weight: 600;
+		}
+
+		.contact-socials a:hover {
+			background-color: #299639;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar" role="navigation" aria-label="Main Navigation">
+		<ul class="nav-list">
+			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+			<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+			<li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main class="contact-main">
+		<div class="contact-container">
+			<h1>Contact Me</h1>
+			<p class="contact-intro">Reach out to me by my phone number, email, Facebook, or address below.</p>
+
+			<div class="contact-info">
+				<p><strong>Contact Number:</strong> <a href="tel:09692219312">09692219312</a></p>
+				<p><strong>Gmail:</strong> <a href="mailto:pdaledanielle@gmail.com">pdaledanielle@gmail.com</a></p>
+				<p><strong>Facebook:</strong> <a href="https://web.facebook.com/dale.peralta.792" target="_blank" rel="noopener noreferrer">Dale Peralta</a></p>
+				<p><strong>Address:</strong> 489 Conbalay St., Binakayan, Kawit, Cavite</p>
+			</div>
+
+			<div class="contact-socials">
+				<a href="https://web.facebook.com/dale.peralta.792" target="_blank" rel="noopener noreferrer">Facebook</a>
+				<a href="https://www.instagram.com/didbyda1le/" target="_blank" rel="noopener noreferrer">Instagram</a>
+				<a href="https://www.youtube.com/@paranoid3491" target="_blank" rel="noopener noreferrer">YouTube</a>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer-text">
+				<h3>Stay Connected!</h3>
+				<p>
+					"Thank you for visiting my website. Connect with me on social media."
+				</p>
+			</div>
+			<div class="footer-social">
+				<h3>Socials</h3>
+				<div class="social-links">
+					<a href="https://www.instagram.com/didbyda1le/">Insta</a>
+					<a href="https://www.youtube.com/@paranoid3491">▶</a>
+					<a href="https://web.facebook.com/dale.peralta.792">f</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>©2026 All rights Reserved | Created by : Peralta</p>
+		</div>
+	</footer>
+</body>
+</html>
