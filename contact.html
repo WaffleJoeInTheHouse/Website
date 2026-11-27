@@ -5,26 +5,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact</title>
 	<link rel="stylesheet" href="landingpageDesign.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/brands.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/solid.min.css">
 	<style>
-		.contact-main {
-			max-width: 680px;
+		.contact-grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: stretch;
+			gap: 24px;
+			max-width: 1000px;
 			margin: 36px auto;
 			padding: 0 20px;
 		}
 
-		.contact-container {
+		.contact-main, .socials-container {
+			flex: 1 1 360px;
+			max-width: 500px;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		.contact-container, .social-Account {
+			width: 100%;
 			background-color: #ffffff;
 			border: 1px solid #d7e8da;
 			border-top: 6px solid #3caf4b;
 			border-radius: 10px;
 			padding: 32px 24px;
-			text-align: center;
 			box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 		}
 
-		.contact-container h1 {
+		.contact-container {
+			text-align: center;
+		}
+
+		.contact-container h1, .social-Account h2 {
 			color: #043e1a;
 			margin-bottom: 10px;
+			text-align: center;
 		}
 
 		.contact-intro {
@@ -32,13 +53,16 @@
 			margin-bottom: 22px;
 		}
 
-		.contact-info {
+		.contact-info, .Social {
 			background-color: #e8f5e9;
 			border-radius: 8px;
 			padding: 18px;
-			margin-bottom: 22px;
 			line-height: 1.8;
 			color: #1b5e20;
+		}
+
+		.contact-info p {
+			margin: 8px;
 		}
 
 		.contact-info a {
@@ -51,28 +75,41 @@
 			text-decoration: underline;
 		}
 
-		.contact-socials {
+		.social-icon {
 			display: flex;
-			justify-content: center;
-			gap: 14px;
-			flex-wrap: wrap;
-		}
-
-		.contact-socials a {
-			padding: 8px 16px;
-			background-color: #3caf4b;
-			color: #ffffff;
-			text-decoration: none;
+			align-items: center;
+			gap: 12px;
+			padding: 10px 12px;
+			margin-bottom: 10px;
+			background-color: #ffffff;
 			border-radius: 6px;
+			color: #065524;
 			font-weight: 600;
+			text-decoration: none;
+			transition: background-color 0.2s ease, transform 0.2s ease;
 		}
 
-		.contact-socials a:hover {
-			background-color: #299639;
+		.social-icon:last-child {
+			margin-bottom: 0;
+		}
+
+		.social-icon:hover {
+			background-color: #d7e8da;
+			transform: translateX(3px);
+		}
+
+		.social-icon i {
+			font-size: 1.25rem;
+			width: 24px;
+			text-align: center;
+			color: #299639;
 		}
 	</style>
 </head>
 <body>
+
+	
+	<!-- Head Nav -->
 	<nav class="navbar" role="navigation" aria-label="Main Navigation">
 		<ul class="nav-list">
 			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -83,26 +120,50 @@
 		</ul>
 	</nav>
 
-	<main class="contact-main">
-		<div class="contact-container">
-			<h1>Contact Me</h1>
-			<p class="contact-intro">Reach out to me by my phone number, email, Facebook, or address below.</p>
 
-			<div class="contact-info">
-				<p><b>Contact Number:</B> <a href="tel:09692219312">09692219312</a></p>
-				<p><b>Gmail:</b> <a href="mailto:pdaledanielle@gmail.com">pdaledanielle@gmail.com</a></p>
-				<p><b>Facebook:</b> <a href="https://web.facebook.com/dale.peralta.792" target="_blank" rel="noopener noreferrer">Dale Peralta</a></p>
-				<p><b>Address:</b> 489 Conbalay St., Binakayan, Kawit, Cavite</p>
+	<!-- Social Boxes -->
+	<div class="contact-grid">
+		<main class="contact-main">
+			<div class="contact-container">
+				<h1>Contact Me</h1>
+				<p class="contact-intro">Reach out to me by my phone number, email, Facebook, or address below.</p>
+
+				<div class="contact-info">
+					<p><b>Contact Number:</b> <a href="tel:09692219312">09692219312</a></p>
+					<p><b>Gmail:</b>pdaledanielle@gmail.com</p>
+					<p><b>Address:</b> 489 Conbalay St., Binakayan, Kawit, Cavite</p>
+				</div>
 			</div>
+		</main>
 
-			<div class="contact-socials">
-				<a href="https://web.facebook.com/dale.peralta.792" target="_blank" rel="noopener noreferrer">Facebook</a>
-				<a href="https://www.instagram.com/didbyda1le/" target="_blank" rel="noopener noreferrer">Instagram</a>
-				<a href="https://www.youtube.com/@paranoid3491" target="_blank" rel="noopener noreferrer">YouTube</a>
+
+
+		<aside class="socials-container">
+			<div class="social-Account">
+				<h2>Social Links</h2>
+				<div class="Social">
+					<a class="social-icon" href="https://web.facebook.com/dale.peralta.792" target="_blank" rel="noopener noreferrer">
+						<i class="fa-brands fa-facebook" aria-hidden="true"></i>
+						<span>Facebook — Dale Peralta</span>
+					</a>
+
+					<a class="social-icon" href="mailto:pdaledanielle@gmail.com">
+						<i class="fa-solid fa-envelope" aria-hidden="true"></i>
+						<span>E-mail — pdaledanielle@gmail.com</span>
+					</a>
+
+					<a class="social-icon" href="https://www.instagram.com/didbyda1le/" target="_blank" rel="noopener noreferrer">
+						<i class="fa-brands fa-instagram" aria-hidden="true"></i>
+						<span>Instagram — @didbyda1le</span>
+					</a>
+				</div>
 			</div>
-		</div>
-	</main>
+		</aside>
+	</div>
 
+
+
+	<!-- Footer Section -->
 	<footer class="footer">
 		<div class="footer-content">
 			<div class="footer-text">
@@ -111,12 +172,13 @@
 					"Thank you for visiting my website. Connect with me on social media."
 				</p>
 			</div>
+
 			<div class="footer-social">
 				<h3>Socials</h3>
 				<div class="social-links">
-					<a href="https://www.instagram.com/didbyda1le/">Insta</a>
-					<a href="https://www.youtube.com/@paranoid3491">▶</a>
-					<a href="https://web.facebook.com/dale.peralta.792">f</a>
+					<a href="https://www.instagram.com/didbyda1le/" target="_blank" rel="noopener noreferrer">Insta</a>
+					<a href="https://www.youtube.com/@paranoid3491" target="_blank" rel="noopener noreferrer">▶</a>
+					<a href="https://web.facebook.com/dale.peralta.792" target="_blank" rel="noopener noreferrer">f</a>
 				</div>
 			</div>
 		</div>
